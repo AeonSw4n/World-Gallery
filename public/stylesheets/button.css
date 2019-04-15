@@ -1,0 +1,109 @@
+
+.button{
+  display: inline-block;
+  position: absolute;
+  margin: 4.2px;
+  padding: 14px;
+  padding-top: 14px;
+  border: none;
+  border-radius: 4px;
+  top: 0;
+  background-color: #47484a;
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 24px;
+  width: 210px;
+  height: 62px;
+  left : calc(50% - 105px);
+  transition: all 0.5s;
+  cursor: pointer;
+  white-space: pre-wrap;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  white-space: pre-wrap;
+  padding-bottom: 0;
+}
+
+.button span:after {
+  content: '\a \2304';
+  position: relative;
+  opacity: 0;
+  text-align: center;
+  top: -12px;
+  /*right: 0px;*/
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-bottom: 0;
+}
+
+.button:hover {
+  height: 75px;
+  background-color: #626263;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  top: -8px;
+}
+
+.roundButton {
+  display: inline-block;
+  position: absolute;
+  margin: 4.2px;
+  padding: 0px;
+  border: none;
+  border-radius: 15px;
+  top: 0;
+  background-color: #47484a;
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 24px;
+  width: 70px;
+  height: 50px;
+  left : calc(35% - 35px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  white-space: pre-wrap;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.roundButton:hover {
+  background-color: #626263;
+}
+
+.workspaceError {
+  display: inline-block;
+  position: absolute;
+  margin: 4.2px;
+  padding: 14px;
+  border: none;
+  top: 0;
+  color: #901E1D;
+  text-align: left;
+  font-size: 22px;
+  height: 50px;
+  left : 0%;
+  /*opacity: 0;
+  visibility: hidden;*/
+  transition: all 0.5s;
+  font-family: 'Arial';
+  font-weight: 600;
+}

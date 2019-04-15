@@ -1,0 +1,78 @@
+
+.title {
+  position:static;
+  margin:0;
+  padding:15px;
+  text-align:center;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color: #47484a;
+  font-size: 36px;
+
+  border: none;
+  background-color: #47484a;
+  color: #f4f4f4;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.buttonHolder{
+  text-align: center;
+}
+
+.titleButton {
+  display: inline-block;
+  position: static;
+  margin-top: 50vh;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #47484a;
+  color: #f4f4f4;
+  font-size: 20px;
+  width: 160px;
+  height: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  white-space: pre-wrap;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.titleButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  white-space: pre-wrap;
+  padding-bottom: 0;
+}
+
+.titleButton span:after {
+  content: '\a \2304';
+  position: relative;
+  opacity: 0;
+  text-align: center;
+  top: -12px;
+  /*right: 0px;*/
+  transition: 0.5s;
+}
+
+.titleButton:hover span {
+  padding-bottom: 0;
+}
+
+.titleButton:hover {
+  height: 62px;
+  background-color: #626263;
+}
+
+.titleButton:hover span:after {
+  opacity: 1;
+  top: -8px;
+}

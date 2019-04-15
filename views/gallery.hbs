@@ -1,0 +1,28 @@
+
+<canvas id="myCanvas"></canvas>
+
+<button  id="myButton" class="button" ><span>Add Picture</span></button>
+
+<!--<button  id="myAdjustButton" name="workspace" class="button" style="visibility:hidden; opacity: 0"><span>Adjust</span></button>-->
+
+<button  id="myTickButton" name="workspace" class="roundButton" ><span>&#10004</span></button>
+
+<button  id="myToeButton" name="workspace" class="roundButton" style="left: calc(65% - 35px); font-size: 20px;" ><span>&#10006</span></button>
+
+<p id="myWorkspaceError" class="workspaceError"></p>
+
+<div id="myBox" class="page">
+  <div id="myForm" class="form">
+    <h2>
+      Paste Image URL
+    </h2>
+    <form onsubmit="return false;">
+      <input id="myFormUrl" type="url" placeholder="e.g. imgur.com"></input>
+      <input id="myFormSubmit" type="submit" style="font-weight:600" value="Upload image"></input>
+    </form>
+  </div>
+</div>
+
+<div id="myImageBox" class="page">
+  <img id="myImageObject" class="placeholder">
+</div>
